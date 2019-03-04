@@ -4,4 +4,4 @@ COPY app /usr/local/
 RUN pip install -r /usr/local/requirements.txt
 RUN mkdir -p /var/log/dojo/
 #CMD python /usr/local/app.py &> /var/log/dojo/app.log
-CMD [ "python",  "/usr/local/app.py", "&>", "/var/log/dojo/app.log" ]
+CMD [ "python", "/usr/local/app.py" ]
